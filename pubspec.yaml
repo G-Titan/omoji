@@ -1,0 +1,33 @@
+name: omoji
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  window_manager: ^0.5.1
+  hotkey_manager: ^0.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/imgs/app-logo.jpg
+
+  # Custom font configuration for Omoji color emoji rendering
+  fonts:
+    - family: NotoColorEmoji
+      fonts:
+        - asset: lib/assets/font/JetBrains_Mono,Noto_Color_Emoji/Noto_Color_Emoji/NotoColorEmoji-Regular.ttf
